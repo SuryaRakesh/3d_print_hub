@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Print Request</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>3D Print Request Summary</h1>
+        <div id="summary">
+            <p><strong>User Name:</strong> <span id="displayUser"></span></p>
+            <p><strong>Project Name:</strong> <span id="displayProject"></span></p>
+            <p><strong>Volume (cm³):</strong> <span id="displayVolume"></span></p>
+            <p><strong>Material Cost (₹):</strong> <span id="displayMaterial"></span></p>
+            <p><strong>Print Time (min):</strong> <span id="displayTime"></span></p>
+            <p><strong>Electricity Cost (₹):</strong> <span id="displayElectricity"></span></p>
+            <p><strong>Total Cost (₹):</strong> <span id="displayTotal"></span></p>
+            <p><strong>Request ID:</strong> <span id="displayID"></span></p>
+        </div>
+        <button id="exportPDF">Export PDF</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
