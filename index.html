@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Print Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>3D Print Hub Calculator</h1>
+
+        <form id="uploadForm">
+            <label>User Name:</label>
+            <input type="text" id="userName" required>
+
+            <label>Project Name:</label>
+            <input type="text" id="projectName" required>
+
+            <label>Upload STL File:</label>
+            <input type="file" id="stlFile" accept=".stl" required>
+
+            <button type="submit">Calculate</button>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/STLLoader.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
